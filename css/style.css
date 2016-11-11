@@ -1,0 +1,448 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Verdana", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+header,
+footer,
+#container {
+  padding: 0 20%;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 100%;
+  color: black;
+  padding: 30px 0 20px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+header {
+  background-color: #8fbc8f;
+  height: 125px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: inset 0px 0px 40px 5px rgba(0,0,0,0.2);
+}
+
+#header-subtitle {
+  text-align: center;
+  color: #fff;
+  line-height: 100%;
+}
+
+#profile-image {
+  width: 150px;
+  height: 150px;
+  position: fixed;
+  right: 22%;
+  top: 40px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+#container {
+  position: fixed;
+  top: 125px;
+  bottom: 62px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+}
+
+#projects {
+  height: 100%;
+  width: 100%;
+}
+
+#projects-heading {
+  height: 5%;
+  color: #999;
+  padding: 40px 0px 40px 5px;
+}
+
+#projects-container {
+  height: 90%;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 50%;
+  min-height: 200px;
+  max-height: 300px;
+  width: 45%;
+  margin: 1.5%;
+  padding: 15px 15px 50px;
+  border-style: solid;
+  border-width: 0.3px;
+  border-color: #c0c0c0;
+  border-radius: 3%;
+  box-shadow: 1.5px 1.5px 1.5px #d3d3d3;
+  background-color: #fff;
+  display: flex;
+  display: -webkit-flex;
+  position: relative
+}
+
+.project-image {
+  height: 100px;
+  width: 100px;
+  margin: 0 15px 5px 0;
+  border-style: solid;
+  border-width: 0.2px;
+  border-color: #dcdcdc;
+  border-radius: 3%;
+}
+
+.project-description {
+  overflow: auto;
+
+}
+
+.project-description::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.project-name {
+  color: #2e8b57;
+  font-size: 16px;
+  padding: 0 0 10px 0;
+}
+
+.project-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Verdana", sans-serif;
+  color: #2f4f4f;
+  padding: 5px 20px 5px 0;
+}
+
+.fade {
+  height: 10%;
+  width: calc(95% - 130px);
+  position: absolute;
+  bottom: 50px;
+  left: 130px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.8));
+  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.8));
+  background: -o-linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.8));
+  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.8));
+}
+
+.view-link {
+  width: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: ; 
+}
+
+footer {
+  background-color: #565656;
+  height: 62px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row-reverse; 
+}
+
+#footer-contacts {
+  list-style-type: none;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin: 10px 0 10px 10px;
+}
+
+address {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+#address-link {
+  font-size: 14px;
+  color: #fff;
+} 
+
+
+/* Media queries */
+
+@media only screen and (max-width: 1450px) {
+  header,
+  footer,
+  #container {
+    padding: 0 15%;
+  }
+
+  #profile-image {
+    right: 17%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header,
+  footer,
+  #container {
+    padding: 0 20%;
+  }
+
+  #profile-image {
+    right: 22%;
+    height: 140px;
+    width: 140px;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  header,
+  footer,
+  #container {
+    padding: 0 15%;
+  }
+
+  #profile-image {
+    right: 17%;
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header,
+  footer,
+  #container {
+    padding: 0 7%;
+  }
+
+  #profile-image {
+    right: 9%;
+    height: 120px;
+    width: 120px;
+  }
+
+  h1 {
+    padding: 20px 0 15px;
+  }
+
+  header {
+    height: 115px;
+  }
+
+  #container {
+    top: 115px;
+  }  
+}
+
+@media only screen and (max-width: 600px) {
+  header,
+  footer,
+  #container {
+    padding: 0 3%;
+  }
+
+  #container {
+    top: 105px;
+  }
+
+  #profile-image {
+    right: 5%;
+    height: 110px;
+    width: 110px;
+  }
+
+  #container::-webkit-scrollbar { 
+    display: none; 
+  }
+
+  .project {
+    max-width: 100%
+  }
+
+  h1 {
+    padding: 17px 0 12px;
+    font-size: 27px
+  }
+
+  h2 {
+    font-size: 20px
+  }
+
+  header {
+    height: 105px;
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    position: static;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #container {
+    position: static;
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+
+  #profile-image {
+    position: absolute;
+    top: 85px;
+    right: calc(100%/2 - 45px);
+    height: 90px;
+    width: 90px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #projects-heading {
+    text-align: center;
+    padding: 80px 0 15px 0;
+  }
+
+  .project {
+    height: 200px;
+  }
+
+  .project-name {
+    padding-bottom: 0;
+  }
+
+  #footer-contacts {
+    margin: 0 auto;
+  }
+
+  address {
+    padding-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  #address-link {
+    font-size: 12px
+  }
+
+  .google {
+    display: none;
+  }
+
+  footer {
+    height: auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .project {
+    max-width: 97%;
+  }
+
+  address {
+    padding-right: 3px;
+  }
+
+  #address-link {
+    font-size: 11px
+  }
+
+  .icon {
+    height: 37px;
+    width: 37px;
+  }
+ 
+}
+
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+  header {
+    position: static;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #container {
+    position: static;
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+
+  #profile-image {
+    position: absolute;
+  }
+}

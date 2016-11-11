@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/jQuery.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+      <h1>Stanislava Kočalková</h1>
+      <h2 id="header-subtitle">Web Developer</h2>
+      <ul id="topContacts"></ul>
+    </header>
+
+    <section id="container">
+      <section id="projects">
+        <h2 id="projects-heading">Projects</h2>
+
+        <section id="projects-container">
+          
+            <section class="project">
+              <a href="http://www.kocalkova.sk/castles/"><img src="images/castle.png" alt="castle" class="project-image"></a>
+              <div class="project-description">
+                <a href="http://www.kocalkova.sk/castles/"><h3 class="project-name">Castles and Manor Houses in Slovakia</h3></a>
+                <h5>Used Technologies:</h5>
+                <p class="project-text">
+                  HTML, CSS, Javascript, jQuery (ajax, getJSON), KnockoutJS, Google Maps API, WikiMedia action API, OpenWeatherMap API
+                </p>
+                <h5>Project Description:</h5>
+                <p class="project-text">
+                  A map with markers on places where castles and manor houses of Slovakia are. Each marker has an infowindow with some information about the castle/manor house including links for wikipedia articles (using WikiMedia action API, AJAX) and weather forecast (using OpenWeatherMap API, JSON). There is also a possibility to filter the markers and search for particular castle/manor house.
+                </p>
+              </div>
+              <div class="fade"></div>
+              <div class="view-link"><a href="http://www.kocalkova.sk/castles/">View Project</a></div>
+            </section>
+
+            <section class="project">
+              <a href="http://www.kocalkova.sk/reach-the-water/"><img src="images/frogger.png" alt="game picture" class="project-image"></a>
+              <div class="project-description">
+                <a href="http://www.kocalkova.sk/reach-the-water/"><h3 class="project-name">Game: Reach the Water</h3></a>
+                <h5>Used Technologies:</h5>
+                <p class="project-text">
+                  HTML, HTML5 – Canvas, CSS, Javascript, jQuery
+                </p>
+                <h5>Project Description:</h5>
+                <p class="project-text">
+                  A game inspired by the classic arcade game Frogger. I developed it after finishing two Udacity online courses - Object Oriented JavaScript and HTML5 Canvas - to check out my knowledge of these two technologies.
+                </p>
+              </div>
+              <div class="fade"></div>
+              <div class="view-link"><a href="http://www.kocalkova.sk/reach-the-water/">View Project</a></div>
+            </section>
+
+            <section class="project">
+              <a href="http://word-count-1119.appspot.com/"><img src="images/wordcount.png" alt="word count" class="project-image"></a>
+              <div class="project-description">
+                <a href="http://word-count-1119.appspot.com/"><h3 class="project-name">Word Count</h3></a>
+                <h5>Used Technologies:</h5>
+                <p class="project-text">
+                  HTML, CSS, Python, Jinja2, Google App Engine
+                </p>
+                <h5>Project Description:</h5>
+                <p class="project-text">
+                  A project assigned by myself to test my ability to code in Python and use Jinja2 after finishing the Udacity online course Intro to Programming. It is a web application that takes a text and produces an analysis of the text: occurrence of different words (number and percentage), total number of words, number of different words and number of words that create 80% of the text.
+                </p>
+              </div>
+              <div class="fade"></div>
+              <div class="view-link"><a href="http://word-count-1119.appspot.com/">View Project</a></div>
+            </section>
+
+            <section class="project">
+              <a href="http://nomadic-sublime-107616.appspot.com/"><img src="images/programmer.png" alt="programmer" class="project-image"></a>
+              <div class="project-description">
+                <a href="http://nomadic-sublime-107616.appspot.com/"><h3 class="project-name">Intro to Programming</h3></a>
+                <h5>Used Technologies:</h5>
+                <p class="project-text">
+                  HTML, CSS, Python, Jinja2, Google App Engine, (a bit of Javascript)
+                </p>
+                <h5>Project Description:</h5>
+                <p class="project-text">
+                  Final project of the Udacity Intro to Programming online course. The purpose of this project was to present the HTML and CSS knowledge, Python knowledge, using Jinja2 templates and Google App Engine Datastore (for saving comments).
+                </p>
+              </div>
+              <div class="fade"></div>
+              <div class="view-link"><a href="http://nomadic-sublime-107616.appspot.com/">View Project</a></div>
+            </section>
+            
+        </section>        
+      </section>
+    </section>
+    <img id="profile-image" src="images/me1.png" alt="stanislava">
+    <footer>
+      
+        <ul id="footer-contacts">
+          <li><address><a id="address-link" href="mailto:stanislava@kocalkova.sk">stanislava@kocalkova.sk</a></address></li>
+          <li><a href="https://sk.linkedin.com/in/kocalkova"><img src="images/linkedin.png" alt="linkedin" class="icon"></a></li>
+          <li><a href="https://github.com/stanislava-1"><img src="images/github.png" alt="github" class="icon"></a></li>
+          <li><a href="https://plus.google.com/108135358318292302596"><img src="images/google.png" alt="google" class="icon google"></a></li>
+          <li><a href="skype:stanka.kocalkova?chat"><img src="images/skype.png" alt="skype" class="icon"></a></li>
+        </ul>
+        
+         
+    </footer>
+  <script src="js/resumeBuilder.js"></script>
+  
+</body>
+</html>
